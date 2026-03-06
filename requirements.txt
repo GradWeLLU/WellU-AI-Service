@@ -13,3 +13,6 @@ numpy
 torch
 torchvision
 torchaudio
+
+fastapi
+uvicorn
