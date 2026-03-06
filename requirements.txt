@@ -1,0 +1,15 @@
+openai
+python-dotenv
+langchain
+langchain-openai
+langchain-core
+pydantic
+scipy
+
+opencv-python
+mediapipe
+numpy
+
+torch
+torchvision
+torchaudio

@@ -1,0 +1,5 @@
+venv
+.env
+posture_models/Correct/
+posture_models/To-stomach/
+posture_models/Uneven/
