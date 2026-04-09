@@ -32,7 +32,18 @@ STRICT RULES:
     name
     sets
     reps
+    exercise_type
+    muscle_groups
+    Difficulty
+    video_url
+    rest_time
 - reps MUST always be a range like "8-10"
+- exercise_type must belong to the following ["COMPOUND", "ISOLATION", "ISOMETRIC", "BODYWEIGHT"]
+- muscle_groups must be a list and must belong to the following ["CHEST", "BACK", "ARMS", "CORE", "LEGS", "SHOULDERS"]
+- Difficulty must belong to the following ["EASY", "INTERMEDIATE", "HARD"]
+- video_url must be a short video of that exercise. Make sure the video is available
+- plan_type must belong to the following ["HYPERTROPHY", "STRENGTH", "WEIGHT_LOSS", "ENDURANCE", "GENERAL_FITNESS", "REHABILITATION"]
+- rest_time must be a float
 - NEVER output empty exercises
 - NEVER omit fields
 

@@ -6,11 +6,10 @@ router = APIRouter()
 
 
 @router.post("/generate-workout")
-def create_workout(request: WorkoutRequest):
+async def create_workout(request: WorkoutRequest):
+    print("Received:", request.dict())
 
-    workout_plan = generate_workout(
-        request
-    )
+    workout_plan = generate_workout(request)
 
     return {
         "goal": request.goal,
